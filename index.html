@@ -5,44 +5,60 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>DV Data School — Learn. Explore. Rule with Data.</title>
   <style>
-    body { font-family: system-ui, Arial, sans-serif; margin:0; line-height:1.6; }
-    header { padding:60px 24px; text-align:center; }
-    .btn { display:inline-block; padding:12px 20px; border:1px solid #111; border-radius:10px; text-decoration:none; }
-    .wrap { max-width:960px; margin:0 auto; padding:24px; }
-    nav a { margin:0 10px; text-decoration:none; }
-    footer { padding:24px; text-align:center; font-size:14px; color:#555; }
+    body { font-family: Arial, sans-serif; margin:0; line-height:1.6; background:#f7f7f7; color:#333; }
+    header { padding:60px 24px; text-align:center; background:#0A66C2; color:white; }
+    header h1 { margin-bottom:10px; font-size:36px; }
+    header p { max-width:700px; margin:0 auto 15px auto; }
+    .btn { display:inline-block; padding:12px 20px; border:1px solid #111; border-radius:10px; text-decoration:none; background:#fff; color:#0A66C2; font-weight:bold; margin:5px; }
+    .wrap { max-width:960px; margin:0 auto; padding:24px; background:white; box-shadow:0 0 10px rgba(0,0,0,0.05); border-radius:8px; margin-top:-40px; }
+    h2, h3 { color:#0A66C2; margin-top:30px; }
+    ul { padding-left:20px; }
+    footer { padding:24px; text-align:center; font-size:14px; color:#555; margin-top:40px; }
+    a { color:#0A66C2; }
   </style>
 </head>
 <body>
   <header>
-  <h1>DV Data School</h1>
-  <p>Learn. Explore. Rule with Data.</p>
-  <p>DV Data School is a Germany-based online platform dedicated to providing high-quality, practical data education to learners worldwide. Our mission is to equip students and professionals with the skills, tools, and confidence to master data analytics, data science, business intelligence, and applied research.</p>
-  <p><a class="btn" href="#courses">View Courses</a> &nbsp; 
-     <a class="btn" href="mailto:dvdata.school@gmail.com">Contact</a></p>
-</header>
+    <h1>DV Data School</h1>
+    <p>Learn. Explore. Rule with Data.</p>
+    <p>DV Data School is a Germany-based online platform providing high-quality, practical data education to learners worldwide. Our mission is to equip students and professionals with the skills and confidence to master data analytics, data science, business intelligence, and applied research.</p>
+    <p><a class="btn" href="#courses">View Courses</a> &nbsp; 
+       <a class="btn" href="mailto:dvdata.school@gmail.com">Contact</a></p>
+  </header>
 
-<div class="wrap">
-  <h2 id="courses">Upcoming Programs</h2>
-  <ul>
-    <li><strong>Data Analytics Bootcamp</strong> – Learn Python, SQL, and Power BI through hands-on projects. (8 weeks, online)</li>
-    <li><strong>Introduction to Data Science</strong> – Explore statistics, machine learning basics, and data visualization. (4 weeks, online)</li>
-    <li><strong>Advanced Research & Projects</strong> – Apply your knowledge to real-world datasets and publish results.</li>
-  </ul>
+  <div class="wrap">
+    <h2 id="courses">Upcoming Programs</h2>
+    <ul>
+      <li><strong>Data Analytics Bootcamp</strong> – Learn Python, SQL, Power BI through hands-on projects (8 weeks, online)</li>
+      <li><strong>Introduction to Data Science</strong> – Statistics, machine learning basics, and data visualization (4 weeks, online)</li>
+      <li><strong>Advanced Research & Projects</strong> – Work on real-world datasets and publish results</li>
+    </ul>
 
-  <h3>Why Choose DV Data School</h3>
-  <ul>
-    <li><strong>Practical Learning:</strong> Courses built around real-world data problems.</li>
-    <li><strong>Global Access:</strong> Learn from anywhere in the world, fully online.</li>
-    <li><strong>Research Focus:</strong> Opportunities to work on datasets and publish findings.</li>
-    <li><strong>Future Recognition:</strong> We are working toward official certifications and industry partnerships to ensure students’ credentials are valued globally.</li>
-  </ul>
+    <h3>Why Choose DV Data School</h3>
+    <ul>
+      <li>Practical learning on real-world data problems</li>
+      <li>Fully online and accessible globally</li>
+      <li>Opportunities to research and publish findings</li>
+      <li>Future recognition with certificates and partner programs</li>
+    </ul>
 
-  <h3>Join the Waitlist</h3>
-  <p>Be the first to enroll in our upcoming courses and gain early access to DV Data School resources, mentorship, and community support.</p>
-  <p><a class="btn" href="https://forms.gle/your-google-form-id" target="_blank">Join Waitlist</a></p>
+    <h3>Research & Collaboration</h3>
+    <p>We welcome partnerships with universities, companies, and data communities. Contact us to explore collaborations, student projects, or co-branded initiatives.</p>
 
-  <h3>About Us</h3>
-  <p>Founded with the vision of making data education accessible and practical, DV Data School is committed to nurturing talent, promoting research, and empowering learners to turn data into actionable insights. Our team combines industry expertise with teaching experience to deliver courses that are both engaging and impactful.</p>
-</div>
+    <h3>Join the Waitlist</h3>
+    <p>Be first to enroll in our upcoming courses and gain early access to DV Data School resources, mentorship, and community support.</p>
+    <p><a class="btn" href="https://forms.gle/your-google-form-id" target="_blank">Join Waitlist</a></p>
 
+    <h3>About Us</h3>
+    <p>Founded with the vision of making data education accessible and practical, DV Data School is committed to nurturing talent, promoting research, and empowering learners to turn data into actionable insights. Our team combines industry expertise with teaching experience to deliver engaging, impactful courses that prepare students for real-world challenges.</p>
+  </div>
+
+  <footer>
+    © <span id="year"></span> DV Data School – Germany – <a href="mailto:dvdata.school@gmail.com">dvdata.school@gmail.com</a>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
