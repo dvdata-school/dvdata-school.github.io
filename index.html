@@ -1,80 +1,166 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>DV Data School — Learn. Explore. Rule with Data.</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DV Data School - LearnSQLwithDV</title>
   <style>
-    body { font-family: Arial, sans-serif; margin:0; line-height:1.6; background:#f7f7f7; color:#333; }
-    header { padding:60px 24px; text-align:center; background:#0A66C2; color:white; }
-    header h1 { margin-bottom:10px; font-size:36px; }
-    header p { max-width:700px; margin:0 auto 15px auto; }
-    .btn { display:inline-block; padding:12px 20px; border:1px solid #111; border-radius:10px; text-decoration:none; background:#fff; color:#0A66C2; font-weight:bold; margin:5px; }
-    .wrap { max-width:960px; margin:0 auto; padding:24px; background:white; box-shadow:0 0 10px rgba(0,0,0,0.05); border-radius:8px; margin-top:-40px; }
-    h2, h3 { color:#0A66C2; margin-top:30px; }
-    ul { padding-left:20px; }
-    footer { padding:24px; text-align:center; font-size:14px; color:#555; margin-top:40px; }
-    a { color:#0A66C2; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f7fa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0f4c75, #3282b8);
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    header img {
+      width: 120px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header h2 {
+      margin: 10px 0;
+      font-weight: normal;
+      font-size: 1.2rem;
+    }
+
+    .tagline {
+      font-style: italic;
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin: 15px 8px;
+      padding: 12px 25px;
+      background: #ff6b6b;
+      color: white;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #d64545;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h2 {
+      text-align: center;
+      color: #0f4c75;
+      margin-bottom: 30px;
+    }
+
+    .about, .courses {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+      margin-bottom: 40px;
+    }
+
+    .about p {
+      font-size: 1.1rem;
+    }
+
+    .courses ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .courses li {
+      padding: 12px;
+      margin: 10px 0;
+      background: #e8f0fe;
+      border-radius: 8px;
+      font-weight: bold;
+      color: #0f4c75;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0f4c75;
+      color: white;
+      margin-top: 40px;
+    }
+
+    footer img {
+      width: 60px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
   </style>
 </head>
 <body>
+
   <header>
+    <img src="DV.jpg" alt="DV Data School Logo">
     <h1>DV Data School</h1>
-    <p>Learn. Explore. Rule with Data.</p>
-    <p>DV Data School is a Germany-based online platform providing high-quality, practical data education to learners worldwide. Our mission is to equip students and professionals with the skills and confidence to master data analytics, data science, business intelligence, and applied research.</p>
-    <p><a class="btn" href="#courses">View Courses</a> &nbsp; 
-       <a class="btn" href="mailto:dvdata.school@gmail.com">Contact</a></p>
+    <h2>LearnSQLwithDV</h2>
+    <p class="tagline">Learn. Explore. Rule with Data.</p>
+    <a href="#courses" class="btn">Explore Courses</a>
+    <a href="https://docs.google.com/forms/d/1B1v6Vf6w-6eepcI97H8R0kZz2QKe11tG8vMu5fz1Wu0/viewform" target="_blank" class="btn">Mini Courses</a>
   </header>
 
-  <div class="wrap">
-    <h2 id="courses">Upcoming Programs</h2>
+  <section class="about">
+    <h2>About Me</h2>
+    <p>
+      Hi, I’m <strong>Divya Rajagopal</strong>, founder of DV Data School. Right now, I’m running this entire school myself — creating content, teaching, and supporting students directly.  
+    </p>
+    <p>
+      My journey started in finance and data analytics, but I quickly realized that <strong>data is the future</strong>. That’s why I built this school: to help anyone, anywhere, learn the real-world skills that will make them confident with data.  
+    </p>
+    <p>
+      This isn’t just another online school. Think of it as a conversation, a community, and a place to grow. Here, you’ll learn by exploring, experimenting, and applying — not just by watching videos.  
+    </p>
+    <p>
+      My vision is simple: to make <strong>DV Data School</strong> a global brand where data learners become data leaders.  
+    </p>
+  </section>
+
+  <section id="courses" class="courses">
+    <h2>Courses I Offer</h2>
     <ul>
-      <li><strong>Data Analytics Bootcamp</strong> – Learn Python, SQL, Power BI through hands-on projects (8 weeks, online)</li>
-      <li><strong>Introduction to Data Science</strong> – Statistics, machine learning basics, and data visualization (4 weeks, online)</li>
-      <li><strong>Advanced Research & Projects</strong> – Work on real-world datasets and publish results</li>
+      <li>SQL Analytics</li>
+      <li>Data Visualization with Tableau</li>
+      <li>Data Visualization with Power BI</li>
+      <li>Excel for Data Analytics</li>
+      <li>Python for Automation</li>
+      <li>Python for Data Analysis</li>
+      <li>Python for Machine Learning</li>
+      <li>Data Cleaning Masterclasses</li>
     </ul>
-
-    <h3>Why Choose DV Data School</h3>
-    <ul>
-      <li>Practical learning on real-world data problems</li>
-      <li>Fully online and accessible globally</li>
-      <li>Opportunities to research and publish findings</li>
-      <li>Future recognition with certificates and partner programs</li>
-    </ul>
-
-    <h3>Research & Collaboration</h3>
-    <p>We welcome partnerships with universities, companies, and data communities. Contact us to explore collaborations, student projects, or co-branded initiatives.</p>
-
-    <h3>Join the Waitlist</h3>
-    <p>Be first to enroll in our upcoming courses and gain early access to DV Data School resources, mentorship, and community support.</p>
-    <p><a class="btn" href="https://forms.gle/your-google-form-id" target="_blank">Join Waitlist</a></p>
-
-    <h3>About Us</h3>
-    <p>Founded with the vision of making data education accessible and practical, DV Data School is committed to nurturing talent, promoting research, and empowering learners to turn data into actionable insights. Our team combines industry expertise with teaching experience to deliver engaging, impactful courses that prepare students for real-world challenges.</p>
-  </div>
+    <p style="text-align:center; margin-top:20px;">
+      👉 Plus <a href="https://docs.google.com/forms/d/1B1v6Vf6w-6eepcI97H8R0kZz2QKe11tG8vMu5fz1Wu0/viewform" target="_blank">Mini Courses</a> with extra skills and details.
+    </p>
+  </section>
 
   <footer>
-    © <span id="year"></span> DV Data School – Germany – <a href="mailto:dvdata.school@gmail.com">dvdata.school@gmail.com</a>
+    <img src="DV.jpg" alt="DV Logo">
+    <p>© 2025 DV Data School | Built and run by Divya Rajagopal</p>
   </footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
-<header>
-  <img src="DV.jpg" alt="DV Data School Logo" width="150" style="border-radius: 10px;">
-  <h1>DV Data School</h1>
-  <p>Empowering the world to learn, research, and innovate with data</p>
-</header>
-header img {
-  display: block;
-  margin: 0 auto 10px auto;
-}
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background: linear-gradient(to right, #1e90ff, #0d47a1);
-  color: #333;
-}
