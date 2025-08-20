@@ -4,109 +4,95 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DV Data School - LearnSQLwithDV</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     body {
       margin: 0;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-      color: #f5f5f5;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0d1b2a, #1b263b, #415a77);
+      color: #e0e1dd;
     }
 
     header {
       text-align: center;
-      padding: 60px 20px;
+      padding: 2rem 1rem;
       background: rgba(0, 0, 0, 0.6);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
     }
 
     header img {
-      max-width: 150px;
-      margin-bottom: 20px;
+      width: 100px;
       border-radius: 50%;
-      box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+      margin-bottom: 1rem;
     }
 
     header h1 {
-      font-size: 2.8em;
-      margin-bottom: 10px;
-      color: #00d9ff;
+      margin: 0;
+      font-size: 2.5rem;
+      color: #f4f4f9;
     }
 
     header p {
-      font-size: 1.2em;
-      color: #dcdcdc;
-    }
-
-    section {
-      padding: 50px 20px;
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    h2 {
-      text-align: center;
-      color: #00d9ff;
-      margin-bottom: 40px;
-    }
-
-    .about {
-      background: rgba(255, 255, 255, 0.05);
-      padding: 30px;
-      border-radius: 12px;
-      line-height: 1.8;
-      font-size: 1.1em;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+      font-size: 1.2rem;
+      color: #9db4c0;
     }
 
     .courses {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 25px;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: 3rem;
     }
 
-    .card {
+    .course-card {
       background: rgba(255, 255, 255, 0.05);
       border-radius: 15px;
-      padding: 25px;
+      padding: 2rem;
       text-align: center;
-      transition: transform 0.3s, box-shadow 0.3s;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
     }
 
-    .card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 6px 25px rgba(0, 217, 255, 0.3);
+    .course-card:hover {
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.6);
     }
 
-    .card h3 {
-      color: #00d9ff;
-      margin-bottom: 15px;
+    .course-card i {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: #4dabf7;
     }
 
-    .card p {
-      color: #cfcfcf;
-      margin-bottom: 20px;
+    .course-card h3 {
+      color: #f1faee;
+      margin-bottom: 1rem;
     }
 
-    .card a {
-      display: inline-block;
-      padding: 10px 18px;
-      background: #00d9ff;
-      color: #000;
-      border-radius: 6px;
+    .course-card p {
+      color: #cbd5e1;
+      margin-bottom: 1.5rem;
+    }
+
+    .course-card a {
       text-decoration: none;
-      font-weight: bold;
+      padding: 0.8rem 1.2rem;
+      background: #4dabf7;
+      color: white;
+      border-radius: 8px;
       transition: background 0.3s;
+      font-weight: bold;
     }
 
-    .card a:hover {
-      background: #00a8cc;
+    .course-card a:hover {
+      background: #1e90ff;
     }
 
     footer {
       text-align: center;
-      padding: 30px;
+      padding: 2rem;
+      margin-top: 2rem;
       background: rgba(0, 0, 0, 0.6);
-      font-size: 0.9em;
       color: #aaa;
     }
   </style>
@@ -114,76 +100,59 @@
 <body>
 
   <header>
-    <img src="DV.jpg" alt="DV Data School Logo">
+    <img src="DV.jpg" alt="DV Logo">
     <h1>DV Data School - LearnSQLwithDV</h1>
     <p>Learn. Explore. Rule with Data.</p>
+    <p>Founded by Divya Rajagopal</p>
   </header>
 
-  <section>
-    <h2>About Me</h2>
-    <div class="about">
-      <p>Hi, I’m <strong>Divya Rajagopal</strong>, the founder of DV Data School. 
-      This isn’t a big institute with layers of people — it’s just me, teaching you directly. 
-      My goal is simple: make data less intimidating and more exciting. 
-      I’ve walked the same path of confusion and curiosity you’re on right now, and I know exactly what it feels like to start fresh.</p>
-
-      <p>That’s why every course here is designed to be practical, clear, and rooted in real-world projects. 
-      Think of this as sitting down with a friend who’s obsessed with data and wants to show you how to master it too. 
-      If you’re ready to change the way you work with data, you’re in the right place.</p>
+  <section class="courses">
+    <div class="course-card">
+      <i class="fa-solid fa-database"></i>
+      <h3>SQL Analytics</h3>
+      <p>Master SQL from basics to advanced analytics with hands-on projects.</p>
+      <a href="sql.html">View Details</a>
     </div>
-  </section>
 
-  <section id="courses">
-    <h2>Courses Offered</h2>
-    <div class="courses">
+    <div class="course-card">
+      <i class="fa-brands fa-python"></i>
+      <h3>Python & Machine Learning</h3>
+      <p>Learn Python for data analysis, automation, and building ML models.</p>
+      <a href="python.html">View Details</a>
+    </div>
 
-      <div class="card">
-        <h3>SQL Analytics</h3>
-        <p>Master SQL queries, joins, and analytics to handle real-world business data.</p>
-        <a href="sql.html">View Details</a>
-      </div>
+    <div class="course-card">
+      <i class="fa-solid fa-chart-line"></i>
+      <h3>Data Visualization (Tableau)</h3>
+      <p>Turn raw data into insights with professional dashboards.</p>
+      <a href="tableau.html">View Details</a>
+    </div>
 
-      <div class="card">
-        <h3>Python & Machine Learning</h3>
-        <p>Learn Python programming and build ML models with real-world datasets.</p>
-        <a href="python-ml.html">View Details</a>
-      </div>
+    <div class="course-card">
+      <i class="fa-solid fa-chart-pie"></i>
+      <h3>Data Visualization (Power BI)</h3>
+      <p>Interactive reports and business dashboards with Power BI.</p>
+      <a href="powerbi.html">View Details</a>
+    </div>
 
-      <div class="card">
-        <h3>Excel for Data Analytics</h3>
-        <p>From pivot tables to advanced formulas, get hands-on with Excel analytics.</p>
-        <a href="excel.html">View Details</a>
-      </div>
+    <div class="course-card">
+      <i class="fa-solid fa-file-excel"></i>
+      <h3>Excel for Data Analytics</h3>
+      <p>Advanced Excel features for analytics and reporting.</p>
+      <a href="excel.html">View Details</a>
+    </div>
 
-      <div class="card">
-        <h3>Tableau</h3>
-        <p>Create interactive dashboards and powerful visualizations using Tableau.</p>
-        <a href="tableau.html">View Details</a>
-      </div>
-
-      <div class="card">
-        <h3>Power BI</h3>
-        <p>Transform business data into visuals and insights with Microsoft Power BI.</p>
-        <a href="powerbi.html">View Details</a>
-      </div>
-
-      <div class="card">
-        <h3>Python for Automation</h3>
-        <p>Automate repetitive tasks with Python scripts and workflows.</p>
-        <a href="automation.html">View Details</a>
-      </div>
-
-      <div class="card">
-        <h3>Data Cleaning Masterclass</h3>
-        <p>Learn advanced techniques for cleaning, preparing, and validating data.</p>
-        <a href="datacleaning.html">View Details</a>
-      </div>
-
+    <div class="course-card">
+      <i class="fa-solid fa-broom"></i>
+      <h3>Data Cleaning Masterclass</h3>
+      <p>Learn to prepare and clean messy data for better analysis.</p>
+      <a href="datacleaning.html">View Details</a>
     </div>
   </section>
 
   <footer>
-    <p>© 2025 DV Data School. All rights reserved.</p>
+    <p>&copy; 2025 DV Data School. All Rights Reserved.</p>
+    <p>Connect: <a href="https://docs.google.com/forms/d/1B1v6Vf6w-6eepcI97H8R0kZz2QKe11tG8vMu5fz1Wu0/viewform" target="_blank" style="color:#4dabf7;">Register Here</a></p>
   </footer>
 
 </body>
