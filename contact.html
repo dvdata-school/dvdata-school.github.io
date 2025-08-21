@@ -6,66 +6,70 @@
   <title>Contact - DV Data School</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background: linear-gradient(135deg, #0f172a, #1e293b);
-      color: #f1f5f9;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0d0d1a, #001f33, #000000);
+      background-attachment: fixed;
+      color: #f5f5f5;
+      text-align: center;
+      padding: 80px 20px;
     }
-
     h1 {
       font-size: 2.5rem;
-      margin-bottom: 20px;
-      text-align: center;
+      color: #00d4ff;
     }
-
     p {
-      font-size: 1.2rem;
-      margin-bottom: 30px;
-      text-align: center;
+      font-size: 1.1rem;
+      color: #b3e6ff;
+      margin: 15px 0;
     }
-
-    .whatsapp-btn {
+    .register-btn {
       display: inline-block;
-      padding: 14px 24px;
-      background-color: #25D366;
-      color: white;
+      margin-top: 40px;
+      padding: 20px 50px;
+      font-size: 1.3rem;
       font-weight: bold;
-      border-radius: 8px;
+      background: linear-gradient(90deg, #ff0066, #ff6600);
+      color: white;
+      border-radius: 50px;
       text-decoration: none;
-      font-size: 1.2rem;
+      box-shadow: 0px 6px 20px rgba(255, 0, 100, 0.7);
       transition: 0.3s;
     }
-
-    .whatsapp-btn:hover {
-      background-color: #128C7E;
+    .register-btn:hover {
+      background: linear-gradient(90deg, #ff6600, #ff0066);
+      box-shadow: 0px 6px 25px rgba(255, 102, 0, 0.9);
     }
-
-    footer {
-      position: absolute;
-      bottom: 20px;
-      text-align: center;
-      font-size: 0.9rem;
-      color: #94a3b8;
+    /* WhatsApp Floating */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      z-index: 100;
+    }
+    .whatsapp-float img {
+      width: 65px;
+      height: 65px;
+      border-radius: 50%;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+      transition: transform 0.3s;
+    }
+    .whatsapp-float img:hover {
+      transform: scale(1.1);
     }
   </style>
 </head>
 <body>
-  <h1>Contact DV Data School</h1>
-  <p>Have questions or want to register for a course?<br> Chat with me directly on WhatsApp!</p>
+  <h1>Contact & Registration</h1>
+  <p>📧 Email: <a href="mailto:dvdata.school@gmail.com" style="color:#00d4ff;">dvdata.school@gmail.com</a></p>
+  <p>📞 Phone: +49 176 7062 6751</p>
+  <p>💬 Or click the WhatsApp button below to chat directly.</p>
+  
+  <a href="https://wa.me/4917670626751" target="_blank" class="register-btn">Register via WhatsApp</a>
 
-  <!-- Replace with your real number in international format -->
-  <a href="https://wa.me/4917670626751" target="_blank" class="whatsapp-btn">
-    💬 Chat on WhatsApp
+  <!-- WhatsApp Floating -->
+  <a href="https://wa.me/4917670626751" target="_blank" class="whatsapp-float">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
   </a>
-
-  <footer>
-    © 2025 DV Data School. All rights reserved.
-  </footer>
 </body>
 </html>
