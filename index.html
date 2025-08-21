@@ -8,166 +8,171 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #0d0d1a, #001f33, #000000);
+      background: linear-gradient(135deg, #0a0f1a, #0f2027, #203a43, #2c5364);
       background-attachment: fixed;
       color: #f5f5f5;
     }
     header {
       text-align: center;
-      padding: 60px 20px;
-    }
-    header img {
-      width: 120px;
+      padding: 3rem 1rem;
+      background: rgba(0,0,0,0.6);
     }
     header h1 {
-      font-size: 2.5rem;
-      margin: 15px 0 10px;
-      color: #00d4ff;
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+      color: #4fc3f7;
     }
     header p {
       font-size: 1.2rem;
-      color: #b3e6ff;
-    }
-    .container {
-      max-width: 1200px;
-      margin: auto;
-      padding: 40px 20px;
+      color: #ddd;
     }
     .courses {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      padding: 3rem;
+      max-width: 1200px;
+      margin: auto;
     }
-    .course-card {
-      background: rgba(255, 255, 255, 0.05);
+    .card {
+      background: rgba(20, 30, 48, 0.9);
       border-radius: 15px;
-      padding: 25px;
+      padding: 2rem;
       text-align: center;
-      box-shadow: 0px 4px 15px rgba(0,0,0,0.6);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.6);
     }
-    .course-card:hover {
+    .card:hover {
       transform: translateY(-8px);
-      box-shadow: 0px 6px 20px rgba(0, 212, 255, 0.7);
+      box-shadow: 0 12px 28px rgba(0,0,0,0.8);
     }
-    .course-card h3 {
-      color: #00d4ff;
-      margin-bottom: 15px;
+    .card-icon {
+      width: 80px;
+      margin-bottom: 1rem;
     }
-    .course-card p {
+    .card h3 {
+      color: #4fc3f7;
+      margin-bottom: 0.5rem;
+    }
+    .card p {
+      color: #bbb;
       font-size: 0.95rem;
-      margin-bottom: 20px;
-      color: #d1eaff;
+      margin-bottom: 1rem;
     }
-    .course-card a {
+    .btn {
       display: inline-block;
-      background: linear-gradient(45deg, #00d4ff, #0077ff);
-      color: white;
-      padding: 14px 28px;
-      border-radius: 50px;
+      padding: 0.8rem 1.5rem;
+      background: #4fc3f7;
+      color: #0a0f1a;
+      border-radius: 30px;
       text-decoration: none;
       font-weight: bold;
-      transition: 0.3s;
+      transition: background 0.3s;
     }
-    .course-card a:hover {
-      background: linear-gradient(45deg, #0077ff, #00d4ff);
+    .btn:hover {
+      background: #00bcd4;
     }
-
-    /* Big Register Now button */
-    .register-btn {
-      display: block;
-      width: fit-content;
-      margin: 60px auto;
-      padding: 20px 50px;
-      font-size: 1.3rem;
-      font-weight: bold;
+    footer {
       text-align: center;
-      background: linear-gradient(90deg, #ff0066, #ff6600);
-      color: white;
-      border-radius: 50px;
-      text-decoration: none;
-      box-shadow: 0px 6px 20px rgba(255, 0, 100, 0.7);
-      transition: 0.3s;
+      padding: 2rem;
+      background: rgba(0,0,0,0.8);
+      color: #aaa;
+      margin-top: 2rem;
     }
-    .register-btn:hover {
-      background: linear-gradient(90deg, #ff6600, #ff0066);
-      box-shadow: 0px 6px 25px rgba(255, 102, 0, 0.9);
-    }
-
     /* WhatsApp Floating Button */
     .whatsapp-float {
       position: fixed;
-      bottom: 25px;
-      right: 25px;
-      z-index: 100;
-    }
-    .whatsapp-float img {
-      width: 65px;
-      height: 65px;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: #fff;
       border-radius: 50%;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
-      transition: transform 0.3s;
+      padding: 16px;
+      font-size: 28px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      z-index: 1000;
+      transition: transform 0.3s ease;
     }
-    .whatsapp-float img:hover {
+    .whatsapp-float:hover {
       transform: scale(1.1);
     }
   </style>
+  <!-- Font Awesome for WhatsApp icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="DV Data School Logo">
     <h1>DV Data School - LearnSQLwithDV</h1>
-    <p>Learn. Explore. Rule with Data.</p>
-    <p>Founded and led by <strong>Divya Rajagopal</strong></p>
+    <p>Learn. Explore. Rule with Data. — by Divya Rajagopal</p>
+    <a href="contact.html" class="btn" style="margin-top:1rem; font-size:1.2rem;">Register Now</a>
   </header>
 
-  <div class="container">
-    <h2 style="text-align:center; color:#00d4ff; margin-bottom:30px;">Our Courses</h2>
-    <div class="courses">
-      <div class="course-card">
-        <h3>SQL Analytics</h3>
-        <p>Master SQL queries, joins, and analytics with real datasets.</p>
-        <a href="sql.html">View Details</a>
-      </div>
-      <div class="course-card">
-        <h3>Python & Machine Learning</h3>
-        <p>Learn Python and ML from scratch with hands-on projects.</p>
-        <a href="python.html">View Details</a>
-      </div>
-      <div class="course-card">
-        <h3>Python for Automation</h3>
-        <p>Automate boring tasks with Python scripts and workflows.</p>
-        <a href="automation.html">View Details</a>
-      </div>
-      <div class="course-card">
-        <h3>Data Visualization (Tableau)</h3>
-        <p>Create stunning dashboards and visual stories with Tableau.</p>
-        <a href="tableau.html">View Details</a>
-      </div>
-      <div class="course-card">
-        <h3>Data Visualization (Power BI)</h3>
-        <p>Learn Power BI for business intelligence and data analysis.</p>
-        <a href="powerbi.html">View Details</a>
-      </div>
-      <div class="course-card">
-        <h3>Excel for Data Analytics</h3>
-        <p>Unlock Excel’s power with pivot tables, charts, and formulas.</p>
-        <a href="excel.html">View Details</a>
-      </div>
-      <div class="course-card">
-        <h3>Data Cleaning Masterclass</h3>
-        <p>Hands-on training to clean, transform, and prepare messy data.</p>
-        <a href="cleaning.html">View Details</a>
-      </div>
+  <section class="courses">
+    <!-- SQL Analytics -->
+    <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/4248/4248443.png" alt="SQL Icon" class="card-icon">
+      <h3>SQL Analytics</h3>
+      <p>Master SQL for data querying, reporting, and dashboards.</p>
+      <a href="sql-analytics.html" class="btn">View Details</a>
     </div>
 
-    <!-- Register Button -->
-    <a href="contact.html" class="register-btn">🚀 Register Now</a>
-  </div>
+    <!-- Python & Machine Learning -->
+    <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/1822/1822899.png" alt="Python ML Icon" class="card-icon">
+      <h3>Python & Machine Learning</h3>
+      <p>Learn Python from scratch and build real-world ML models.</p>
+      <a href="python-ml.html" class="btn">View Details</a>
+    </div>
 
-  <!-- WhatsApp Floating -->
-  <a href="https://wa.me/4917670626751" target="_blank" class="whatsapp-float">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    <!-- Python for Automation -->
+    <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/2721/2721298.png" alt="Automation Icon" class="card-icon">
+      <h3>Python for Automation</h3>
+      <p>Automate boring tasks, files, and workflows with Python.</p>
+      <a href="python-automation.html" class="btn">View Details</a>
+    </div>
+
+    <!-- Data Visualization with Tableau -->
+    <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/2784/2784462.png" alt="Tableau Icon" class="card-icon">
+      <h3>Data Visualization with Tableau</h3>
+      <p>Interactive dashboards & storytelling with Tableau.</p>
+      <a href="tableau.html" class="btn">View Details</a>
+    </div>
+
+    <!-- Data Visualization with Power BI -->
+    <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968819.png" alt="Power BI Icon" class="card-icon">
+      <h3>Data Visualization with Power BI</h3>
+      <p>Create powerful BI reports & business dashboards.</p>
+      <a href="powerbi.html" class="btn">View Details</a>
+    </div>
+
+    <!-- Excel for Data Analytics -->
+    <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/732/732220.png" alt="Excel Icon" class="card-icon">
+      <h3>Excel for Data Analytics</h3>
+      <p>Excel skills for reporting, dashboards, and analytics.</p>
+      <a href="excel.html" class="btn">View Details</a>
+    </div>
+
+    <!-- Data Cleaning Masterclass -->
+    <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/992/992651.png" alt="Cleaning Icon" class="card-icon">
+      <h3>Data Cleaning Masterclass</h3>
+      <p>Learn data preprocessing & transformation techniques.</p>
+      <a href="data-cleaning.html" class="btn">View Details</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 DV Data School | Designed & handled by Divya Rajagopal</p>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/4917670626751" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
   </a>
 </body>
 </html>
