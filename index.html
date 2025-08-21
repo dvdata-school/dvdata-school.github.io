@@ -4,95 +4,100 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DV Data School - LearnSQLwithDV</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <style>
     body {
+      font-family: 'Poppins', sans-serif;
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #0d1b2a, #1b263b, #415a77);
-      color: #e0e1dd;
+      padding: 0;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      overflow-x: hidden;
     }
 
     header {
       text-align: center;
-      padding: 2rem 1rem;
-      background: rgba(0, 0, 0, 0.6);
-      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+      padding: 40px 20px;
     }
 
     header img {
-      width: 100px;
+      width: 120px;
+      height: auto;
       border-radius: 50%;
-      margin-bottom: 1rem;
+      box-shadow: 0 0 20px rgba(0,0,0,0.6);
     }
 
     header h1 {
-      margin: 0;
       font-size: 2.5rem;
-      color: #f4f4f9;
+      margin: 20px 0 10px;
     }
 
     header p {
       font-size: 1.2rem;
-      color: #9db4c0;
+      color: #ddd;
     }
 
     .courses {
+      padding: 50px 20px;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
-      padding: 3rem;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: auto;
     }
 
     .course-card {
-      background: rgba(255, 255, 255, 0.05);
-      border-radius: 15px;
-      padding: 2rem;
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 20px;
+      padding: 25px;
       text-align: center;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
     }
 
     .course-card:hover {
-      transform: translateY(-8px) scale(1.02);
-      box-shadow: 0 8px 25px rgba(0,0,0,0.6);
+      transform: translateY(-10px);
+      box-shadow: 0 12px 35px rgba(0,0,0,0.6);
     }
 
-    .course-card i {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-      color: #4dabf7;
+    .course-card img {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 20px;
+      filter: drop-shadow(0px 4px 8px rgba(0,0,0,0.5));
     }
 
     .course-card h3 {
-      color: #f1faee;
-      margin-bottom: 1rem;
+      margin-bottom: 15px;
+      font-size: 1.5rem;
     }
 
     .course-card p {
-      color: #cbd5e1;
-      margin-bottom: 1.5rem;
+      font-size: 1rem;
+      color: #ccc;
+      margin-bottom: 20px;
     }
 
     .course-card a {
+      display: inline-block;
+      background: #00c6ff;
+      color: #fff;
+      padding: 10px 18px;
+      border-radius: 10px;
       text-decoration: none;
-      padding: 0.8rem 1.2rem;
-      background: #4dabf7;
-      color: white;
-      border-radius: 8px;
+      font-weight: 500;
       transition: background 0.3s;
-      font-weight: bold;
     }
 
     .course-card a:hover {
-      background: #1e90ff;
+      background: #0072ff;
     }
 
     footer {
       text-align: center;
-      padding: 2rem;
-      margin-top: 2rem;
-      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      margin-top: 50px;
+      font-size: 0.9rem;
       color: #aaa;
     }
   </style>
@@ -100,59 +105,72 @@
 <body>
 
   <header>
-    <img src="DV.jpg" alt="DV Logo">
+    <img src="DV.jpg" alt="DV Data School Logo">
     <h1>DV Data School - LearnSQLwithDV</h1>
     <p>Learn. Explore. Rule with Data.</p>
-    <p>Founded by Divya Rajagopal</p>
+    <p>Founded by <strong>Divya Rajagopal</strong> — your guide to mastering data analytics and AI.</p>
   </header>
 
   <section class="courses">
     <div class="course-card">
-      <i class="fa-solid fa-database"></i>
+      <img src="https://cdn-icons-png.flaticon.com/512/4248/4248443.png" alt="SQL Icon">
       <h3>SQL Analytics</h3>
-      <p>Master SQL from basics to advanced analytics with hands-on projects.</p>
+      <p>Master queries, joins, and real-world analytics.</p>
       <a href="sql.html">View Details</a>
     </div>
 
     <div class="course-card">
-      <i class="fa-brands fa-python"></i>
-      <h3>Python & Machine Learning</h3>
-      <p>Learn Python for data analysis, automation, and building ML models.</p>
-      <a href="python.html">View Details</a>
-    </div>
-
-    <div class="course-card">
-      <i class="fa-solid fa-chart-line"></i>
-      <h3>Data Visualization (Tableau)</h3>
-      <p>Turn raw data into insights with professional dashboards.</p>
+      <img src="https://cdn-icons-png.flaticon.com/512/3094/3094982.png" alt="Tableau Icon">
+      <h3>Data Visualization in Tableau</h3>
+      <p>Create dashboards and visualize insights.</p>
       <a href="tableau.html">View Details</a>
     </div>
 
     <div class="course-card">
-      <i class="fa-solid fa-chart-pie"></i>
-      <h3>Data Visualization (Power BI)</h3>
-      <p>Interactive reports and business dashboards with Power BI.</p>
+      <img src="https://cdn-icons-png.flaticon.com/512/888/888879.png" alt="Power BI Icon">
+      <h3>Data Visualization in Power BI</h3>
+      <p>Interactive business dashboards and reports.</p>
       <a href="powerbi.html">View Details</a>
     </div>
 
     <div class="course-card">
-      <i class="fa-solid fa-file-excel"></i>
+      <img src="https://cdn-icons-png.flaticon.com/512/732/732220.png" alt="Excel Icon">
       <h3>Excel for Data Analytics</h3>
-      <p>Advanced Excel features for analytics and reporting.</p>
+      <p>Advanced formulas, pivot tables, dashboards.</p>
       <a href="excel.html">View Details</a>
     </div>
 
     <div class="course-card">
-      <i class="fa-solid fa-broom"></i>
+      <img src="https://cdn-icons-png.flaticon.com/512/1822/1822899.png" alt="Automation Icon">
+      <h3>Python for Automation</h3>
+      <p>Automate tasks, scripts, and workflows.</p>
+      <a href="python_automation.html">View Details</a>
+    </div>
+
+    <div class="course-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/3094/3094958.png" alt="Python Data Icon">
+      <h3>Python for Data Analysis</h3>
+      <p>Data cleaning, manipulation, and visualization.</p>
+      <a href="python_data.html">View Details</a>
+    </div>
+
+    <div class="course-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/2092/2092669.png" alt="ML Icon">
+      <h3>Python for Machine Learning</h3>
+      <p>Build ML models from scratch with real datasets.</p>
+      <a href="python_ml.html">View Details</a>
+    </div>
+
+    <div class="course-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/2303/2303989.png" alt="Data Cleaning Icon">
       <h3>Data Cleaning Masterclass</h3>
-      <p>Learn to prepare and clean messy data for better analysis.</p>
-      <a href="datacleaning.html">View Details</a>
+      <p>Hands-on training in cleaning messy datasets.</p>
+      <a href="data_cleaning.html">View Details</a>
     </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 DV Data School. All Rights Reserved.</p>
-    <p>Connect: <a href="https://docs.google.com/forms/d/1B1v6Vf6w-6eepcI97H8R0kZz2QKe11tG8vMu5fz1Wu0/viewform" target="_blank" style="color:#4dabf7;">Register Here</a></p>
+    <p>&copy; 2025 DV Data School | Designed by Divya Rajagopal</p>
   </footer>
 
 </body>
