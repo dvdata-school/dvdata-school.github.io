@@ -6,173 +6,120 @@
   <title>DV Data School - LearnSQLwithDV</title>
   <style>
     body {
+      font-family: Arial, sans-serif;
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #0a0f1a, #0f2027, #203a43, #2c5364);
-      background-attachment: fixed;
-      color: #f5f5f5;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
     }
     header {
       text-align: center;
-      padding: 3rem 1rem;
-      background: rgba(0,0,0,0.6);
+      padding: 30px;
+    }
+    header img {
+      max-width: 180px;
     }
     header h1 {
-      font-size: 2.8rem;
-      margin-bottom: 0.5rem;
-      color: #4fc3f7;
+      margin: 10px 0 5px;
+      font-size: 2.5rem;
+      color: #00c6ff;
     }
     header p {
       font-size: 1.2rem;
-      color: #ddd;
+      opacity: 0.9;
     }
-    .courses {
+    .course-container {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2rem;
-      padding: 3rem;
-      max-width: 1200px;
-      margin: auto;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 40px;
     }
-    .card {
-      background: rgba(20, 30, 48, 0.9);
+    .course-card {
+      background: rgba(0, 0, 0, 0.6);
       border-radius: 15px;
-      padding: 2rem;
-      text-align: center;
-      transition: transform 0.3s, box-shadow 0.3s;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.6);
-    }
-    .card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 12px 28px rgba(0,0,0,0.8);
-    }
-    .card-icon {
-      width: 80px;
-      margin-bottom: 1rem;
-    }
-    .card h3 {
-      color: #4fc3f7;
-      margin-bottom: 0.5rem;
-    }
-    .card p {
-      color: #bbb;
-      font-size: 0.95rem;
-      margin-bottom: 1rem;
-    }
-    .btn {
-      display: inline-block;
-      padding: 0.8rem 1.5rem;
-      background: #4fc3f7;
-      color: #0a0f1a;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background 0.3s;
-    }
-    .btn:hover {
-      background: #00bcd4;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      background: rgba(0,0,0,0.8);
-      color: #aaa;
-      margin-top: 2rem;
-    }
-    /* WhatsApp Floating Button */
-    .whatsapp-float {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #25D366;
-      color: #fff;
-      border-radius: 50%;
-      padding: 16px;
-      font-size: 28px;
-      text-align: center;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-      z-index: 1000;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+      overflow: hidden;
       transition: transform 0.3s ease;
     }
-    .whatsapp-float:hover {
-      transform: scale(1.1);
+    .course-card:hover {
+      transform: scale(1.05);
+    }
+    .course-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .course-card h3 {
+      margin: 15px;
+      font-size: 1.5rem;
+      color: #00c6ff;
+    }
+    .course-card p {
+      margin: 0 15px 20px;
+      opacity: 0.85;
+    }
+    .course-card a {
+      display: block;
+      margin: 15px;
+      text-align: center;
+      padding: 12px;
+      background: #00c6ff;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+    .course-card a:hover {
+      background: #0072ff;
+      color: #fff;
     }
   </style>
-  <!-- Font Awesome for WhatsApp icon -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
   <header>
+    <!-- ✅ Update this to your actual logo file (e.g. logo.png in repo) -->
+    <img src="logo.png" alt="DV Data School Logo">
     <h1>DV Data School - LearnSQLwithDV</h1>
-    <p>Learn. Explore. Rule with Data. — by Divya Rajagopal</p>
-    <a href="contact.html" class="btn" style="margin-top:1rem; font-size:1.2rem;">Register Now</a>
+    <p>Learn. Explore. Rule with Data.</p>
   </header>
 
-  <section class="courses">
-    <!-- SQL Analytics -->
-    <div class="card">
-      <img src="https://cdn-icons-png.flaticon.com/512/4248/4248443.png" alt="SQL Icon" class="card-icon">
+  <section class="course-container">
+    <div class="course-card">
+      <img src="images/sql.jpg" alt="SQL Analytics">
       <h3>SQL Analytics</h3>
-      <p>Master SQL for data querying, reporting, and dashboards.</p>
-      <a href="sql-analytics.html" class="btn">View Details</a>
+      <p>Master SQL queries and data analytics with real business case studies.</p>
+      <a href="sql-analytics.html">View Details</a>
     </div>
-
-    <!-- Python & Machine Learning -->
-    <div class="card">
-      <img src="https://cdn-icons-png.flaticon.com/512/1822/1822899.png" alt="Python ML Icon" class="card-icon">
+    <div class="course-card">
+      <img src="images/python.jpg" alt="Python & Machine Learning">
       <h3>Python & Machine Learning</h3>
-      <p>Learn Python from scratch and build real-world ML models.</p>
-      <a href="python-ml.html" class="btn">View Details</a>
+      <p>From basics of Python to building ML models – all in one course.</p>
+      <a href="python-ml.html">View Details</a>
     </div>
-
-    <!-- Python for Automation -->
-    <div class="card">
-      <img src="https://cdn-icons-png.flaticon.com/512/2721/2721298.png" alt="Automation Icon" class="card-icon">
-      <h3>Python for Automation</h3>
-      <p>Automate boring tasks, files, and workflows with Python.</p>
-      <a href="python-automation.html" class="btn">View Details</a>
+    <div class="course-card">
+      <img src="images/powerbi.jpg" alt="Power BI Visualization">
+      <h3>Power BI Visualization</h3>
+      <p>Create interactive dashboards and reports with Power BI.</p>
+      <a href="powerbi.html">View Details</a>
     </div>
-
-    <!-- Data Visualization with Tableau -->
-    <div class="card">
-      <img src="https://cdn-icons-png.flaticon.com/512/2784/2784462.png" alt="Tableau Icon" class="card-icon">
-      <h3>Data Visualization with Tableau</h3>
-      <p>Interactive dashboards & storytelling with Tableau.</p>
-      <a href="tableau.html" class="btn">View Details</a>
+    <div class="course-card">
+      <img src="images/tableau.jpg" alt="Tableau Masterclass">
+      <h3>Tableau Masterclass</h3>
+      <p>Visualize complex data with ease using Tableau.</p>
+      <a href="tableau.html">View Details</a>
     </div>
-
-    <!-- Data Visualization with Power BI -->
-    <div class="card">
-      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968819.png" alt="Power BI Icon" class="card-icon">
-      <h3>Data Visualization with Power BI</h3>
-      <p>Create powerful BI reports & business dashboards.</p>
-      <a href="powerbi.html" class="btn">View Details</a>
-    </div>
-
-    <!-- Excel for Data Analytics -->
-    <div class="card">
-      <img src="https://cdn-icons-png.flaticon.com/512/732/732220.png" alt="Excel Icon" class="card-icon">
+    <div class="course-card">
+      <img src="images/excel.jpg" alt="Excel for Data Analytics">
       <h3>Excel for Data Analytics</h3>
-      <p>Excel skills for reporting, dashboards, and analytics.</p>
-      <a href="excel.html" class="btn">View Details</a>
+      <p>Transform raw data into insights with Excel techniques.</p>
+      <a href="excel.html">View Details</a>
     </div>
-
-    <!-- Data Cleaning Masterclass -->
-    <div class="card">
-      <img src="https://cdn-icons-png.flaticon.com/512/992/992651.png" alt="Cleaning Icon" class="card-icon">
-      <h3>Data Cleaning Masterclass</h3>
-      <p>Learn data preprocessing & transformation techniques.</p>
-      <a href="data-cleaning.html" class="btn">View Details</a>
+    <div class="course-card">
+      <img src="images/automation.jpg" alt="Python for Automation">
+      <h3>Python for Automation</h3>
+      <p>Automate repetitive tasks and workflows with Python.</p>
+      <a href="python-automation.html">View Details</a>
     </div>
   </section>
-
-  <footer>
-    <p>&copy; 2025 DV Data School | Designed & handled by Divya Rajagopal</p>
-  </footer>
-
-  <!-- WhatsApp Floating Button -->
-  <a href="https://wa.me/4917670626751" class="whatsapp-float" target="_blank">
-    <i class="fab fa-whatsapp"></i>
-  </a>
 </body>
 </html>
