@@ -8,136 +8,204 @@
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-      color: #fff;
+      padding: 0;
+      background: linear-gradient(135deg, #0f172a, #1e293b, #0a192f);
+      color: #f1f5f9;
     }
+
     header {
       text-align: center;
-      padding: 30px;
+      padding: 40px 20px;
+      background: rgba(0,0,0,0.7);
     }
+
     header img {
-      max-width: 180px;
+      width: 120px;
+      border-radius: 50%;
+      margin-bottom: 15px;
     }
+
     header h1 {
-      margin: 10px 0 5px;
-      font-size: 2.5rem;
-      color: #00c6ff;
+      font-size: 2rem;
+      margin: 10px 0;
     }
+
     header p {
       font-size: 1.2rem;
-      opacity: 0.9;
+      color: #cbd5e1;
     }
-    .course-container {
+
+    .courses {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
       padding: 40px;
     }
-    .course-card {
-      background: rgba(0, 0, 0, 0.6);
+
+    .card {
+      background: rgba(255,255,255,0.05);
       border-radius: 15px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-      overflow: hidden;
-      transition: transform 0.3s ease;
-    }
-    .course-card:hover {
-      transform: scale(1.05);
-    }
-    .course-card img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-    }
-    .course-card h3 {
-      margin: 15px;
-      font-size: 1.5rem;
-      color: #00c6ff;
-    }
-    .course-card p {
-      margin: 0 15px 20px;
-      opacity: 0.85;
-    }
-    .course-card a {
-      display: block;
-      margin: 15px;
+      padding: 20px;
       text-align: center;
-      padding: 12px;
-      background: #00c6ff;
-      color: #000;
-      text-decoration: none;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      font-size: 1.3rem;
+      color: #38bdf8;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 25px;
+      background: #38bdf8;
+      color: #0f172a;
       font-weight: bold;
       border-radius: 8px;
-      transition: background 0.3s;
+      text-decoration: none;
+      transition: background 0.3s ease;
     }
-    .course-card a:hover {
-      background: #0072ff;
+
+    .btn:hover {
+      background: #0ea5e9;
+    }
+
+    .register-btn {
+      display: block;
+      margin: 40px auto;
+      padding: 18px 40px;
+      font-size: 1.2rem;
+      background: #22c55e;
       color: #fff;
+      border-radius: 50px;
+      text-align: center;
+      width: fit-content;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease;
     }
+
+    .register-btn:hover {
+      transform: scale(1.05);
+      background: #16a34a;
+    }
+
     footer {
       text-align: center;
       padding: 20px;
-      background: rgba(0, 0, 0, 0.5);
-      font-size: 0.9rem;
+      background: rgba(0,0,0,0.6);
       margin-top: 40px;
     }
-    footer a {
-      color: #00c6ff;
-      text-decoration: none;
+
+    /* Floating WhatsApp */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25d366;
+      padding: 15px;
+      border-radius: 50%;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+      z-index: 1000;
     }
-    footer a:hover {
-      text-decoration: underline;
+
+    .whatsapp-float img {
+      width: 40px;
+      height: 40px;
     }
   </style>
 </head>
 <body>
+
   <header>
-    <!-- ✅ Make sure logo.png is in the root folder -->
-    <img src="logo.png" alt="DV Data School Logo">
+    <img src="DV.jpg" alt="DV Data School Logo">
     <h1>DV Data School - LearnSQLwithDV</h1>
     <p>Learn. Explore. Rule with Data.</p>
   </header>
 
-  <section class="course-container">
-    <div class="course-card">
-      <img src="images/sql.jpg" alt="SQL Analytics">
+  <section class="courses">
+    <div class="card">
+      <img src="https://source.unsplash.com/600x400/?database,sql" alt="SQL Analytics">
       <h3>SQL Analytics</h3>
-      <p>Master SQL queries and data analytics with real business case studies.</p>
-      <a href="sql-analytics.html">View Details</a>
+      <p>Master querying, joins, and advanced SQL analytics.</p>
+      <a href="sql-analytics.html" class="btn">View Details</a>
     </div>
-    <div class="course-card">
-      <img src="images/python.jpg" alt="Python & Machine Learning">
-      <h3>Python & Machine Learning</h3>
-      <p>From basics of Python to building ML models – all in one course.</p>
-      <a href="python-ml.html">View Details</a>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/600x400/?python,code" alt="Python for Data Analysis">
+      <h3>Python for Data Analysis</h3>
+      <p>Learn Python basics, Pandas, NumPy, and real-world data projects.</p>
+      <a href="python-ml.html" class="btn">View Details</a>
     </div>
-    <div class="course-card">
-      <img src="images/powerbi.jpg" alt="Power BI Visualization">
-      <h3>Power BI Visualization</h3>
-      <p>Create interactive dashboards and reports with Power BI.</p>
-      <a href="powerbi.html">View Details</a>
-    </div>
-    <div class="course-card">
-      <img src="images/tableau.jpg" alt="Tableau Masterclass">
-      <h3>Tableau Masterclass</h3>
-      <p>Visualize complex data with ease using Tableau.</p>
-      <a href="tableau.html">View Details</a>
-    </div>
-    <div class="course-card">
-      <img src="images/excel.jpg" alt="Excel for Data Analytics">
-      <h3>Excel for Data Analytics</h3>
-      <p>Transform raw data into insights with Excel techniques.</p>
-      <a href="excel.html">View Details</a>
-    </div>
-    <div class="course-card">
-      <img src="images/automation.jpg" alt="Python for Automation">
+
+    <div class="card">
+      <img src="https://source.unsplash.com/600x400/?automation,python" alt="Python for Automation">
       <h3>Python for Automation</h3>
-      <p>Automate repetitive tasks and workflows with Python.</p>
-      <a href="python-automation.html">View Details</a>
+      <p>Automate workflows and tasks with Python scripting.</p>
+      <a href="automation.html" class="btn">View Details</a>
+    </div>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/600x400/?excel,data" alt="Excel for Data Analytics">
+      <h3>Excel for Data Analytics</h3>
+      <p>Data cleaning, pivot tables, charts, and dashboards.</p>
+      <a href="excel.html" class="btn">View Details</a>
+    </div>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/600x400/?powerbi,dashboard" alt="Power BI">
+      <h3>Power BI</h3>
+      <p>Create powerful dashboards and business reports.</p>
+      <a href="powerbi.html" class="btn">View Details</a>
+    </div>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/600x400/?tableau,visualization" alt="Tableau">
+      <h3>Tableau</h3>
+      <p>Build interactive and shareable visualizations.</p>
+      <a href="tableau.html" class="btn">View Details</a>
+    </div>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/600x400/?machinelearning,ai" alt="Machine Learning">
+      <h3>Python for Machine Learning</h3>
+      <p>Hands-on projects with scikit-learn and ML models.</p>
+      <a href="python-ml.html" class="btn">View Details</a>
+    </div>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/600x400/?data,cleaning" alt="Data Cleaning">
+      <h3>Data Cleaning Masterclass</h3>
+      <p>Techniques to clean, transform, and prepare data efficiently.</p>
+      <a href="datacleaning.html" class="btn">View Details</a>
     </div>
   </section>
 
+  <a href="https://docs.google.com/forms/d/e/1FAIp" target="_blank" class="register-btn">Register Now</a>
+
   <footer>
-    <p>© 2025 DV Data School | <a href="https://dvdata-school.github.io/">dvdata-school.github.io</a></p>
+    <p>© 2025 DV Data School. Built and run by Divya Rajagopal.</p>
+    <a href="contact.html" class="btn">Contact Me</a>
   </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/4917670626751" class="whatsapp-float" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Chat on WhatsApp">
+  </a>
+
 </body>
 </html>
